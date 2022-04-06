@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aleatoriamente</title>
+    <script type="text/javascript">
+      function calcularAleatorio() {
+        var primeiroNumero = document.getElementById('primeiroNumero').value;
+        var segundoNumero = document.getElementById('segundoNumero').value;
+
+        if (primeiroNumero === segundoNumero) {
+          alert('Insira numeros diferentes');
+        } else {
+          var numeroAleatorio;
+          if (primeiroNumero < segundoNumero) {
+            numeroAleatorio = parseInt(
+              Math.random() * (segundoNumero - primeiroNumero) + primeiroNumero
+            );
+          } else {
+            numeroAleatorio = parseInt(
+              Math.random() * (primeiroNumero - segundoNumero) + segundoNumero
+            );
+          }
+          alert(numeroAleatorio);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Gerador de Numeros</h1>
+
+    <input type="number" id="primeiroNumero" placeholder="Primeiro Numero" />
+    <input
+      class=""
+      type="number"
+      id="segundoNumero"
+      placeholder="Segundo Numero"
+    />
+
+    <button onclick="calcularAleatorio()">Gerar</button>
+  </body>
+</html>

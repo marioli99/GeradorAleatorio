@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Dongle', sans-serif;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(81, 179, 255, 1) 100%
+  );
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  height: 10vh;
+  width: 30vw;
+  font-size: 40px;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 10%;
+}
+h1 {
+  font-size: 60px;
+  margin-top: 20%;
+  font-family: 'Lobster', cursive;
+  color: rgb(82, 82, 82);
+}
+
+.aleatorio {
+  font-size: 50px;
+}
+
+button {
+  height: 7vh;
+  width: 10vw;
+  border-radius: 12px;
+  background-color: #47bbcf;
+  font-size: 30px;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px rgb(172, 172, 172);
+}
+
+button:hover {
+  background-color: rgb(178, 215, 250);
+}
+
+button:active {
+  background-color: rgb(178, 215, 250);
+  box-shadow: 0 5px #fff;
+  transform: translateY(4px);
+}
+
+footer {
+  margin-top: 8%;
+  font-size: 25px;
+}
